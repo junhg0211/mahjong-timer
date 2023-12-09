@@ -34,9 +34,11 @@ function tick() {
     timerSpan.innerText = formatDuration(duration);
 
     if (duration < 0) {
-        timerSpan.style.color = "#b30202";
+        timerSpan.style.color = "#f7f7f9";
+        document.body.style.backgroundColor = "#b30202";
     } else {
-        timerSpan.style.color = "";
+        timerSpan.style.color = "#19191e";
+        document.body.style.backgroundColor = "#f7f7f9";
     }
 }
 
