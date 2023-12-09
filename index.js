@@ -50,6 +50,10 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(tick);
 });
 
-document.addEventListener("mousedown", () => {
+function updateTimer() {
     timerStart = new Date();
-});
+}
+
+document.addEventListener("mousedown", updateTimer);
+document.addEventListener("click", updateTimer);
+window.addEventListener("keydown", updateTimer);
