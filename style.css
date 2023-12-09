@@ -9,4 +9,4 @@ body {
 .container { display: flex; }
 .vertical-whitespace { flex: 1; }
 
-.timer { font-size: 18rem; }
+.timer { font-size: 8rem; }
