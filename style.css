@@ -1,0 +1,12 @@
+body {
+    margin: 0;
+    font-family: "Pretendard", sans-serif;
+    font-variant-numeric: tabular-nums;
+    background-color: #f7f7f9;
+}
+.main-container { display: flex; height: 100vh; flex-direction: column; }
+.horizontal-whitespace { flex: 1; }
+.container { display: flex; }
+.vertical-whitespace { flex: 1; }
+
+.timer { font-size: 18rem; }
