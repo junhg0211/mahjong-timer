@@ -3,6 +3,10 @@ let timerSpan;
 let timerStart;
 let timerDuration = 10000;
 
+function addDuration(duration) {
+    timerDuration += duration;
+}
+
 function padZero(number, length) {
     let zeroCount = Math.max(length - number.toString().length, 0);
 
