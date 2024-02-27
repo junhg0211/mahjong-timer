@@ -30,6 +30,10 @@ function formatDuration(duration) {
     return negativeSign + formatted;
 }
 
+function lerp(t, a, b) {
+    return (b-a) * t + a;
+}
+
 function tick() {
     let now = new Date();
     let delta = now - timerStart;
@@ -41,8 +45,14 @@ function tick() {
         timerSpan.style.color = "#f7f7f9";
         document.body.style.backgroundColor = "#b30202";
     } else {
+        let durationRatio = duration / timerDuration;
+
+        let r = lerp(durationRatio, 0xfc, 0xf7);
+        let g = lerp(durationRatio, 0xba, 0xf7);
+        let b = lerp(durationRatio, 0x03, 0xf9);
+
         timerSpan.style.color = "#19191e";
-        document.body.style.backgroundColor = "#f7f7f9";
+        document.body.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
     }
 }
 
