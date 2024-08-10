@@ -1,17 +1,38 @@
 body {
-    margin: 0;
-    font-family: "Pretendard", sans-serif;
-    font-variant-numeric: tabular-nums;
-    background-color: #f7f7f9;
+  margin: 0;
+  font-family: "Pretendard", sans-serif;
+  font-variant-numeric: tabular-nums;
+  background-color: #f7f7f9;
 }
-button { padding: 0.5rem; border: none; border-radius: 10px; }
+button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 10px;
+}
 
-.main-container { display: flex; height: 100vh; flex-direction: column; }
-.horizontal-whitespace { flex: 1; }
-.container { display: flex; }
-.vertical-whitespace { flex: 1; }
+.main-container {
+  display: flex;
+  height: 100dvh;
+  flex-direction: column;
+}
+.horizontal-whitespace {
+  flex: 1;
+}
+.container {
+  display: flex;
+}
+.vertical-whitespace {
+  flex: 1;
+}
 
-.timer { font-size: 8rem; }
+.timer {
+  font-size: 8rem;
+}
 
-.buttons { text-align: center; font-size: 1rem; }
-.buttons button { font-size: 1rem; }
+.buttons {
+  text-align: center;
+  font-size: 1rem;
+}
+.buttons button {
+  font-size: 1rem;
+}
